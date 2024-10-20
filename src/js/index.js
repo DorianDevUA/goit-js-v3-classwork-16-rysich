@@ -1,16 +1,16 @@
-import { common } from './common';
-import { createMarkup } from './helpers/createMarkup';
-import { createModal } from './helpers/createModal';
-import { instruments } from './helpers/instruments';
-
 import 'basiclightbox/dist/basiclightbox.min.css';
+import { common } from './common';
+import { createMarkup } from '../helpers/createMarkup';
+import { createModal } from '../helpers/createModal';
+import { instruments } from '../helpers/instruments';
 
-const search = document.querySelector('.js-search');
+// const search = document.querySelector('.js-search');
 const list = document.querySelector('.js-list');
 const favoriteArr = JSON.parse(localStorage.getItem(common.KEY_FAVORITE)) ?? [];
 const basketArr = JSON.parse(localStorage.getItem(common.KEY_BASKET)) ?? [];
 
 createMarkup(instruments, list);
+
 list.addEventListener('click', onClick);
 
 function onClick(evt) {
@@ -51,6 +51,3 @@ try {
 }
 
 console.log('after error');
-
-
-

@@ -2,11 +2,20 @@
   "name": "goit-js-v3-classwork-16-rysich",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "source": "src/index.html",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
+    "start": "parcel",
+    "build": "parcel build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "Dorian Devua <dorian.devua@gmail.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "basiclightbox": "^5.0.4"
+  },
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  }
 }
